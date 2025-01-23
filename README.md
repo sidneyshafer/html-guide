@@ -1,4 +1,4 @@
-# HTML Sandbox for Beginners
+# HTML Sandbox
 
 >Code snippets for learning the basics of HTML.
 
