@@ -62,7 +62,7 @@ This HTML snippet defines a simple webpage. Below is a brief explanation of the 
 * This tag defines a paragraph of text to be displayed.
 * In this example, the text `"This is my very first website"` is displayed as a paragraph.
 
-<kbd> <br> [Back to Top][#table-of-contents] <br> </kbd>
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ## Live Server Extension
 
