@@ -31,8 +31,6 @@
 </html>
 ```
 
-This HTML snippet defines a simple webpage.
-
 ## Code Breakdown
 
 ### `<!DOCTYPE html>`
@@ -99,8 +97,6 @@ Live Server Extension for Visual Studio Code by Ritwick Dey - **[GitHub Reposito
 </head>
 ```
 
-This HTML snippet demonstrates the use of the `<meta>` tag within the `<head>` section of a webpage. Each `<meta>` tag provides metadata—information about the webpage—that isn't displayed on the webpage itself but is used by browsers, search engines, and other tools.
-
 ## Code Breakdown
 
 ### `<meta charset="UTF-8">`
@@ -152,8 +148,6 @@ This HTML snippet demonstrates the use of the `<meta>` tag within the `<head>` s
     <hr>
     Harum odit dolorum architecto unde fugit earum impedit. Ad assumenda nihil ex nulla? Assumenda?</p>
 ```
-
-This snippet of HTML code demonstrates the use of typography-related tags to structure and format textual content of a webpage.
 
 ### `<h1> to <h6>` - Headings
 Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
@@ -209,8 +203,6 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 <!-- Remote Images -->
 <img src="https://source.unsplash.com/200x200/?building,city" alt="My Image 2">
 ```
-
-This HTML snippet demonstrates the use of links and images within a webpage.
 
 ### `<a>` - Hyperlinks
 * The `<a>` tag defines hyperlinks that allow users to navigate to other web pages or resources.
