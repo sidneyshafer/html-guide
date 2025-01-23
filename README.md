@@ -9,6 +9,11 @@
 * [Typography - Headings and Paragraphs](#typography---headings-and-paragraphs)
 * [Links and Images](#links-and-images)
 * [Lists and Tables](#lists-and-tables)
+* [Forms and Inputs](#forms-and-inputs)
+* [Inline vs Block Elements](#inline-vs-block-elements)
+* [IDs and Classes](#ids-and-classes)
+* [HTML Entities](#html-entities)
+* [HTML5 Semantic Tags](#html5-semantic-tags)
 
 ## Basic HTML Layout
 
@@ -66,7 +71,7 @@ This HTML snippet defines a simple webpage.
 * This tag defines a paragraph of text to be displayed.
 * In this example, the text `"This is my very first website"` is displayed as a paragraph.
 
->See full source code for this section - [01-basic-layout.html](https://github.com/sidneyshafer/html-sandbox/blob/master/01-basic-layout.html)
+>See full source code for this section [01-basic-layout.html](https://github.com/sidneyshafer/html-sandbox/blob/master/01-basic-layout.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -123,7 +128,7 @@ This HTML snippet demonstrates the use of the `<meta>` tag within the `<head>` s
     * `NOFOLLOW`: Instructs search engines not to follow links on this page. 
     * Useful for pages under development or private pages that shouldn't appear in search results.
 
->See full source code for this section - [03-meta-tags.html](https://github.com/sidneyshafer/html-sandbox/blob/master/03-meta-tags.html)
+>See full source code for this section [03-meta-tags.html](https://github.com/sidneyshafer/html-sandbox/blob/master/03-meta-tags.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -179,7 +184,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * Inserts a thematic break or divider.
 * Often used to visually separate sections or ideas.
 
->See full source code for this section - [04-typography.html](https://github.com/sidneyshafer/html-sandbox/blob/master/04-typography.html)
+>See full source code for this section [04-typography.html](https://github.com/sidneyshafer/html-sandbox/blob/master/04-typography.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -240,7 +245,7 @@ This HTML snippet demonstrates the use of links and images within a webpage.
 * `width`: Specify image width.
 * `height`: Specify image height.
 
->See full source code for this section - [05-links-and-images.html](https://github.com/sidneyshafer/html-sandbox/blob/master/05-links-and-images.html)
+>See full source code for this section [05-links-and-images.html](https://github.com/sidneyshafer/html-sandbox/blob/master/05-links-and-images.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -329,6 +334,297 @@ This HTML snippet demonstrates the use of links and images within a webpage.
 * `<th></th>`: Defines header cells.
 * `<td></td>`: Defines data cells.
 
->See full source code for this section - [06-lists-and-tables.html](https://github.com/sidneyshafer/html-sandbox/blob/master/06-lists-and-tables.html)
+>See full source code for this section [06-lists-and-tables.html](https://github.com/sidneyshafer/html-sandbox/blob/master/06-lists-and-tables.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+## Forms and Inputs
+
+### `<form>`
+* Defines the form element for collecting user input.
+* `action`: Specifies the URL where form data will be submitted for processing.
+
+### Form Buttons
+**Submit Button**
+```
+<input type="submit" value="Submit">
+```
+* Submits the form data to the specified action URL.
+
+**Reset Button**
+```
+<button type="reset">Reset</button>
+```
+* Resets all form fields to their default values.
+
+## Form Fields and Inputs
+**Text Input**
+```
+<input type="text" id="name" name="name">
+```
+* Collects single-line text input.
+* `type="text"`: Specifies the input as plain text.
+* `id and name`: Used to identify the field and associate it with the `<label>`.
+
+**Number Input**
+```
+<input type="number" name="age" id="age" min="0" max="100">
+```
+* Collects a numerical value
+* `min` and `max`: Restrict the range of acceptable values.
+
+**Email Input**
+```
+<input type="email" name="email" id="email" placeholder="Enter an email">
+```
+* Collects a valid email address.
+* `type="email"`: Ensures the input is a properly formatted email.
+* `placeholder`: Displays placeholder text in the input field.
+
+**Date Input**
+```
+<input type="date" name="birthdate" id="birthdate">
+```
+* Collects a date value.
+* In this case, allows users to enter their birthdate using a date picker.
+
+**Radio Buttons**
+```
+<div>
+    <label for="membership">Membership</label><br>
+    <input type="radio" name="membership" value="simple" id="membership"> Simple
+    <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+    <input type="radio" name="membership" value="super" id="membership"> Super
+</div>
+```
+* Allows selection of a single option from a group.
+* `type="radio"`: Defines a radio button.
+* `name`: Groups radio buttons (only one radio button can be selected per group).
+* `checked`: Pre-selects a default option.
+
+**Checkboxes**
+```
+<div>
+    <label for="membership">Hobbies</label><br>
+    <input type="checkbox" name="hobbies" value="bike" id="hobbies"> Bike
+    <input type="checkbox" name="hobbies" value="drawing" id="hobbies" checked> Drawing
+    <input type="checkbox" name="hobbies" value="cooking" id="hobbies"> Cooking
+</div>
+```
+* Allows multiple selections from a list of options.
+* `type="checkbox"`: Defines a checkbox input.
+* `checked`: Pre-selects the option.
+
+**Textarea**
+```
+<textarea name="message" id="message" cols="50" rows="10"></textarea>
+```
+* Collects multi-line text input.
+* `cols`: Specifies the width of the text area.
+* `rows`: Specifies the height of the text area.
+
+**Select Dropdown**
+```
+<select name="gender" id="gender">
+    <option value="male">Male</option>
+    <option value="female" selected>Female</option>
+    <option value="other">Other</option>
+</select>
+```
+* Provides a dropdown menu for selecting a single option.
+* `<option>`: Defines individual options.
+* `selected`: Pre-selects the default option.
+
+**Datalist**
+```
+<input list="states" name="state" id="state">
+<datalist id="states">
+    <option value="Alaska"></option>
+    <option value="Alabama"></option>
+</datalist>
+```
+* Provides autocomplete suggestions for input.
+* `list`: Associates the `<input>` with the `<datalist>` by `id`.
+* `<option>`: Defines items for the input.
+
+>See full source code for this section [07-forms-input.html](https://github.com/sidneyshafer/html-sandbox/blob/master/07-forms-input.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+## Inline vs Block Elements
+
+**Block-Level Elements**
+* Block-level elements occupy the full width of their parent container and start on a new line. They create a new line in the document flow.
+* Examples include: `<p>`, `<ul>`, `<li>`.
+* Allow child elements (both block and inline elements) inside.
+* Block elements define the structure of the document, creating vertical layouts.
+
+**Inline Elements**
+* Inline elements only take up as much width as necessary and do not start on a new line.
+* Examples include: `<a>`, `<strong>`, `<em>`.
+* Remains "inline" within the text or other content.
+* Cannot contain block-level elements but can contain other inline elements.
+* Inline elements enhance or modify content within block elements without disrupting the flow.
+
+**Comparison Table**
+| Feature | Block Elements | Inline Elements |
+| --------| -------------- | --------------- |
+| Does the element start on a new line? | Yes | No |
+| Does the element occupy the full width of containing element? | Yes | No |
+| How do nested elements operate? | Can contain block and inline | Can only contain inline |
+| Examples | `<p>`, `<ul>`, `<li>` | `<a>`, `<strong>`, `<em>` |
+
+>See full source code for this section [08-block-inline.html](https://github.com/sidneyshafer/html-sandbox/blob/master/08-block-inline.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+## IDs and Classes
+
+**ID**
+* A unique identifier for a specific HTML element.
+* Only one element should have a given `id` on a page.
+* Example: `<div id="main-header">`
+* Used for:
+    * Targeting specific elements in CSS for unique styling.
+    * Selecting elements in JavaScript for manipulation.
+    * Creating bookmarks for navigation (e.g., href="#main-header").
+
+**Class**
+* A reusable identifier applied to multiple elements for grouping or shared styling.
+* Example: `<div class="card">`
+* Usage:
+    * Can be used on multiple elements.
+    * Used to apply the same CSS styling to multiple elements or group them logically.
+
+>See full source code for this section [09-id-class.html](https://github.com/sidneyshafer/html-sandbox/blob/master/09-id-class.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+## HTML Entities
+
+**What are HTML Entities?**
+* HTML entities are special codes used to display characters that:
+    1. **Have a reserved purpose in HTML** (e.g., `<`, `>`).
+    2. **Cannot be typed directly** (e.g., non-breaking spaces, special symbols).
+* **Syntax**: Begins with `&`, followed by the entity name (e.g., `&nbsp;`) or numerical code (e.g., `&#160;`), and ends with a semicolon (`;`).
+
+**Entity Breakdown**
+| Name | Symbol(s) | Purpose |
+| ---- | --------- | ------- |
+| Non-Breaking Space | `&nbsp;` | Adds extra spaces between words or elements. |
+| Greater Than | `&gt;` and `&#62;` | Displays the `>` (greater-than) symbol. |
+| Less Than | `&lt;` and `&#60;` | Displays the `<` (less-than) symbol. |
+| Copyright  | `&copy;` | Displays the copyright symbol (`©`). |
+| Registered Trademark  | `&reg;` | Displays the registered trademark symbol (`®`). |
+| Cent Sign  | `&cent;` | Displays the cent sign (`¢`). |
+| Pound Sterling  | `&pound;` | Displays the pound sterling symbol (`£`). |
+| Yen/Yuan  | `&yen;` | Displays the yen/yean symbol (`¥`). |
+| Euro  | `&euro;` | Displays the euro symbol (`€`). |
+| Spade  | `&spades;` | Displays the spade symbol (`♠`). |
+| Club  | `&clubs;` | Displays the club symbol (`♣`). |
+| Heart  | `&hearts;` | Displays the heart symbol (`♥`). |
+| Diamond  | `&diams;` | Displays the diamond symbol (`♦`). |
+| <  | `&lt;` | Displays the code entity for `<`. |
+| >  | `&gt;` | Displays the code entity for `>`. |
+
+* `<kbd>`: Displays text in a monospace font, indicating a keyboard input.
+
+>See full source code for this section [10-entities.html](https://github.com/sidneyshafer/html-sandbox/blob/master/10-entities.html)
+
+<kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
+
+## HTML5 Semantic Tags
+
+Semantic tags provide meaning to the structure, making it easier for browsers, developers, and assistive technologies (like screen readers) to interpret the content.
+* Assistive technologies can better interpret the structure and purpose of the content.
+* Search engines can prioritize and understand content structure more effectively.
+* Semantic tags make the HTML code easier to read and maintain.
+* Aligns with modern web standards, ensuring better browser compatibility.
+
+### `<header>`
+```
+<header id="header" class="card">
+    <h1>My Website</h1>
+    <p>Just Another Website</p>
+</header>
+```
+* Represents the header section of the page or a section. 
+* Typically contains introductory content like a logo, site title, or tagline.
+
+### `<main>`
+```
+<main id="main">
+    ...
+</main>
+```
+* Contains the primary content of the document. 
+* It is intended to hold the central information relevant to the page.
+
+### `<section>`
+```
+<section id="welcome" class="card">
+   <h2>Welcome To Our Website</h2>
+   ...
+</section>
+<section id="blog">
+   <p>From Our Blog</p>
+   ...
+</section>
+```
+* Represents a standalone section of content, often with its own heading. 
+* Useful for grouping related content.
+
+### `<article>`
+```
+<article class="article">
+   <h3>Article 1</h3>
+   ...
+</article>
+<article class="article">
+   <h3>Article 2</h3>
+   ...
+</article>
+```
+* Represents a self-contained piece of content that could stand alone (e.g., a blog post, news article).
+* Used for individual blog articles, each with a title and content.
+
+### `<aside>`
+```
+<aside id="sidebar" class="card">
+   <h3>Navigation</h3>
+   <nav>
+      <ul id="main-nav">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   </nav>
+   ...
+</aside>
+```
+* Represents content related to the main content, such as sidebars, advertisements, or additional navigation links.
+
+### `<nav>`
+```
+<nav>
+   <ul id="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+   </ul>
+</nav>
+```
+* Represents a navigation block containing links to other sections or pages.
+
+### `<footer>`
+```
+<footer id="footer">
+   <p class="text-center">Copyright &copy; My Website 2020</p>
+</footer>
+```
+* Represents the footer of the page or a section. 
+* Typically includes copyright info, legal disclaimers, or contact details.
+
+>See full source code for this section [11-html5-semantic-elements.html](https://github.com/sidneyshafer/html-sandbox/blob/master/11-html5-semantic-elements.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
