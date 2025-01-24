@@ -69,7 +69,7 @@
 * This tag defines a paragraph of text to be displayed.
 * In this example, the text `"This is my very first website"` is displayed as a paragraph.
 
->See full source code for this section [01-basic-layout.html](https://github.com/sidneyshafer/html-sandbox/blob/master/01-basic-layout.html)
+>See full source code for this section [01-basic-layout.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/01-basic-layout.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -124,7 +124,7 @@ Live Server Extension for Visual Studio Code by Ritwick Dey - **[GitHub Reposito
     * `NOFOLLOW`: Instructs search engines not to follow links on this page. 
     * Useful for pages under development or private pages that shouldn't appear in search results.
 
->See full source code for this section [03-meta-tags.html](https://github.com/sidneyshafer/html-sandbox/blob/master/03-meta-tags.html)
+>See full source code for this section [03-meta-tags.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/03-meta-tags.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -178,7 +178,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * Inserts a thematic break or divider.
 * Often used to visually separate sections or ideas.
 
->See full source code for this section [04-typography.html](https://github.com/sidneyshafer/html-sandbox/blob/master/04-typography.html)
+>See full source code for this section [04-typography.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/04-typography.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -237,7 +237,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `width`: Specify image width.
 * `height`: Specify image height.
 
->See full source code for this section [05-links-and-images.html](https://github.com/sidneyshafer/html-sandbox/blob/master/05-links-and-images.html)
+>See full source code for this section [05-links-and-images.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/05-links-and-images.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -326,7 +326,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `<th></th>`: Defines header cells.
 * `<td></td>`: Defines data cells.
 
->See full source code for this section [06-lists-and-tables.html](https://github.com/sidneyshafer/html-sandbox/blob/master/06-lists-and-tables.html)
+>See full source code for this section [06-lists-and-tables.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/06-lists-and-tables.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -439,7 +439,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `list`: Associates the `<input>` with the `<datalist>` by `id`.
 * `<option>`: Defines items for the input.
 
->See full source code for this section [07-forms-input.html](https://github.com/sidneyshafer/html-sandbox/blob/master/07-forms-input.html)
+>See full source code for this section [07-forms-input.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/07-forms-input.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -466,7 +466,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 | How do nested elements operate? | Can contain block and inline | Can only contain inline |
 | Examples | `<p>`, `<ul>`, `<li>` | `<a>`, `<strong>`, `<em>` |
 
->See full source code for this section [08-block-inline.html](https://github.com/sidneyshafer/html-sandbox/blob/master/08-block-inline.html)
+>See full source code for this section [08-block-inline.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/08-block-inline.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -488,7 +488,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
     * Can be used on multiple elements.
     * Used to apply the same CSS styling to multiple elements or group them logically.
 
->See full source code for this section [09-id-class.html](https://github.com/sidneyshafer/html-sandbox/blob/master/09-id-class.html)
+>See full source code for this section [09-id-class.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/09-id-class.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -521,7 +521,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 
 * `<kbd>`: Displays text in a monospace font, indicating a keyboard input.
 
->See full source code for this section [10-entities.html](https://github.com/sidneyshafer/html-sandbox/blob/master/10-entities.html)
+>See full source code for this section [10-entities.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/10-entities.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
@@ -617,6 +617,6 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Represents the footer of the page or a section. 
 * Typically includes copyright info, legal disclaimers, or contact details.
 
->See full source code for this section [11-html5-semantic-elements.html](https://github.com/sidneyshafer/html-sandbox/blob/master/11-html5-semantic-elements.html)
+>See full source code for this section [11-html5-semantic-elements.html](https://github.com/sidneyshafer/html-sandbox/blob/master/src/11-html5-semantic-elements.html)
 
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
