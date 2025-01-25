@@ -17,7 +17,7 @@
 
 ## Basic HTML Layout
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <head>
@@ -83,7 +83,7 @@ Live Server Extension for Visual Studio Code by Ritwick Dey - **[GitHub Reposito
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ## Meta Tags
-```
+```html
 <head>
    <meta charset="UTF-8">
    <!-- Important for Responsive Design (different screen sizes)-->
@@ -129,7 +129,7 @@ Live Server Extension for Visual Studio Code by Ritwick Dey - **[GitHub Reposito
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ## Typography - Headings and Paragraphs
-```
+```html
 <!-- Headings -->
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -183,7 +183,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 <kbd> <br> [Back to Top](#table-of-contents) <br> </kbd>
 
 ## Links and Images
-```
+```html
 <!-- External Link -->
 <p>
     <a href="http://google.com">Click For Google</a>
@@ -244,7 +244,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 ## Lists and Tables
 
 ### `<ul>` - Unordered Lists
-```
+```html
 <ul>
     <li>Item 1</li>
     <li>Item 2</li>
@@ -274,7 +274,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
     * `type`: Specifies the style of numbering (e.g., `A` for uppercase letters, `1` for numbers, `i` for Roman numerals).
 
 ### Nested List
-```
+```html
 <ul>
     <li>Item 1</li>
     <li>Item 2
@@ -290,7 +290,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * Creates a hierarchy of items within a list.
 
 ### Tables
-```
+```html
 <table style="width: 600px;">
     <thead>
         <tr>
@@ -381,7 +381,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * In this case, allows users to enter their birthdate using a date picker.
 
 **Radio Buttons**
-```
+```html
 <div>
     <label for="membership">Membership</label><br>
     <input type="radio" name="membership" value="simple" id="membership"> Simple
@@ -395,7 +395,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `checked`: Pre-selects a default option.
 
 **Checkboxes**
-```
+```html
 <div>
     <label for="membership">Hobbies</label><br>
     <input type="checkbox" name="hobbies" value="bike" id="hobbies"> Bike
@@ -408,7 +408,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `checked`: Pre-selects the option.
 
 **Textarea**
-```
+```html
 <textarea name="message" id="message" cols="50" rows="10"></textarea>
 ```
 * Collects multi-line text input.
@@ -416,7 +416,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `rows`: Specifies the height of the text area.
 
 **Select Dropdown**
-```
+```html
 <select name="gender" id="gender">
     <option value="male">Male</option>
     <option value="female" selected>Female</option>
@@ -428,7 +428,7 @@ Tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 * `selected`: Pre-selects the default option.
 
 **Datalist**
-```
+```html
 <input list="states" name="state" id="state">
 <datalist id="states">
     <option value="Alaska"></option>
@@ -534,7 +534,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Aligns with modern web standards, ensuring better browser compatibility.
 
 ### `<header>`
-```
+```html
 <header id="header" class="card">
     <h1>My Website</h1>
     <p>Just Another Website</p>
@@ -544,7 +544,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Typically contains introductory content like a logo, site title, or tagline.
 
 ### `<main>`
-```
+```html
 <main id="main">
     ...
 </main>
@@ -553,7 +553,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * It is intended to hold the central information relevant to the page.
 
 ### `<section>`
-```
+```html
 <section id="welcome" class="card">
    <h2>Welcome To Our Website</h2>
    ...
@@ -567,7 +567,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Useful for grouping related content.
 
 ### `<article>`
-```
+```html
 <article class="article">
    <h3>Article 1</h3>
    ...
@@ -581,7 +581,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Used for individual blog articles, each with a title and content.
 
 ### `<aside>`
-```
+```html
 <aside id="sidebar" class="card">
    <h3>Navigation</h3>
    <nav>
@@ -597,7 +597,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Represents content related to the main content, such as sidebars, advertisements, or additional navigation links.
 
 ### `<nav>`
-```
+```html
 <nav>
    <ul id="main-nav">
       <li><a href="index.html">Home</a></li>
@@ -609,7 +609,7 @@ Semantic tags provide meaning to the structure, making it easier for browsers, d
 * Represents a navigation block containing links to other sections or pages.
 
 ### `<footer>`
-```
+```html
 <footer id="footer">
    <p class="text-center">Copyright &copy; My Website 2020</p>
 </footer>
