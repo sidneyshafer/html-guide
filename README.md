@@ -1,6 +1,6 @@
-# HTML Sandbox
+# A Guide to Learning HTML5
 
->Code snippets for learning the basics of HTML.
+>Code snippets for learning the basics of HTML5.
 
 ## Table of Contents
 * [Basic HTML Layout](#basic-html-layout)
